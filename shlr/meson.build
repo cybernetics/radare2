@@ -17,7 +17,7 @@ if not capstone_dep.found() or not get_option('use_sys_capstone')
 
     # NOTE: when you update CS_TIP or CS_BRA, also update them in shlr/Makefile
     #CS_TIP = '3a660df88c30685cccf6ff68b4d6d4337b5caf7e'
-    CS_TIP = 'b22d76226a7c2e5e038bd5ba4e378f68bdc62d07'
+    CS_TIP = '02d23a1aa04ade73b2981b179889f7503302a8a5'
     CS_BRA = 'next'
     #CS_TIP = '7090f081b17a5293a2c185a06513fede18065d3c'
     #CS_BRA = 'v4'
@@ -93,7 +93,7 @@ if not capstone_dep.found() or not get_option('use_sys_capstone')
     'arch/X86/X86Disassembler.c',
     'arch/X86/X86DisassemblerDecoder.c',
     'arch/X86/X86IntelInstPrinter.c',
-    # cs5-only 'arch/X86/X86InstPrinterCommon.c',
+    'arch/X86/X86InstPrinterCommon.c',
     'arch/X86/X86Mapping.c',
     'arch/X86/X86Module.c',
     'arch/XCore/XCoreDisassembler.c',
